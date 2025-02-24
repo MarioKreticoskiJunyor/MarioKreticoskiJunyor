@@ -12,7 +12,7 @@ Welcome to my GitHub profile. Feel free to explore my repositories and projects.
 
 # Technologies and Tools 🚀
 
-Here are some of the technologies and tools I work with:
+Here are some of the technologies and tools I've had brief experience with:
 
 <div align="center">
   <img align="center" height="40em" width="40em" title="Python" alt="Python" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
@@ -26,7 +26,7 @@ Here are some of the technologies and tools I work with:
 </div>
 
 </div>
-I'm a passionate coder with a knack for problem-solving and creative thinking. I enjoy bringing ideas to life through code and exploring new technologies. When I'm not coding, you can find me [doing something you enjoy outside coding, like hobbies or interests].
+I'm a future programmer, with a talent for problem solving and creative thinking. I like bringing ideas to life through code and exploring new technologies. When I'm not programming, you can find me playing Valorant.
 
 Connect with me on [LinkedIn](https://www.linkedin.com/in/m%C3%A1rio-kreticoski-junyor-31b92620b/)!
 </div>
