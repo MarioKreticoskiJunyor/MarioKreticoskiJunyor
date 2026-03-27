@@ -6,8 +6,7 @@ Welcome to my GitHub profile. Feel free to explore my repositories and projects.
 <div>
   <a href="https://github.com/MarioKreticoskiJunyor">
     <img height="180em" src="https://github-readme-stats-fast.vercel.app/api?username=MarioKreticoskiJunyor&show_icons=true&theme=dark"/>
-    <img height="180em" src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=MarioKreticoskiJunyor&hide_progress=true"/>
-    <img height="180em" src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=MarioKreticoskiJunyor&layout=donut"/>
+    <img height="180em" src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=MarioKreticoskiJunyor&layout=compact&theme=dark"/>
   </a>
 </div>
 
