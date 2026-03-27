@@ -5,8 +5,9 @@ Welcome to my GitHub profile. Feel free to explore my repositories and projects.
 🌱 Currently focusing on improving my coding skills and learning new technologies.
 <div>
   <a href="https://github.com/MarioKreticoskiJunyor">
-    <img height="180em" src="https://github-readme-stats-fast.vercel.app/api?username=MarioKreticoskiJunyor&show_icons=true"/>
-    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MarioKreticoskiJunyor&exclude_repo=https://github.com/MarioKreticoskiJunyor/PowerBits&layout=compact&langs_count=7&theme=dark&show_icons=true"/>
+    <img height="180em" src="https://github-readme-stats-fast.vercel.app/api?username=MarioKreticoskiJunyor&show_icons=true&theme=dark"/>
+    <img height="180em" src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=MarioKreticoskiJunyor&hide_progress=true"/>
+    <img height="180em" src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=MarioKreticoskiJunyor&layout=donut"/>
   </a>
 </div>
 
