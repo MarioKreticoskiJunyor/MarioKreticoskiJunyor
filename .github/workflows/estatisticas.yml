@@ -1,6 +1,6 @@
-# Gera os cards de estatísticas e de linguagens com o token do dono do perfil
-# (incluindo repositórios privados) e publica as imagens no GitHub Pages.
-# Não faz commit: as imagens vão para o Pages, fora do histórico do repositório.
+# Gera o card de linguagens com o token do dono do perfil (incluindo
+# repositórios privados) e publica a imagem no GitHub Pages.
+# Não faz commit: a imagem vai para o Pages, fora do histórico do repositório.
 
 name: Atualizar estatísticas do perfil
 
@@ -23,18 +23,6 @@ jobs:
   gerar:
     runs-on: ubuntu-latest
     steps:
-      - name: Card de estatísticas
-        uses: stats-organization/github-readme-stats-action@v2
-        with:
-          card: stats
-          # "contributions" segue a opção de contribuições privadas do perfil;
-          # "commits" é escondido porque, com token fine-grained, conta só os públicos.
-          # Em inglês porque a ferramenta ainda não traduz "contributions" para pt-br.
-          options: username=MarioKreticoskiJunyor&show_icons=true&theme=dark&locale=en&show=contributions&hide=commits
-          path: cards/stats.svg
-          token: ${{ secrets.STATS_TOKEN }}
-          fail_on_error: true
-
       - name: Card de linguagens
         uses: stats-organization/github-readme-stats-action@v2
         with:
@@ -44,39 +32,7 @@ jobs:
           token: ${{ secrets.STATS_TOKEN }}
           fail_on_error: true
 
-      - name: Gráfico de atividade
-        uses: vn7n24fzkq/github-profile-summary-cards@release
-        env:
-          GITHUB_TOKEN: ${{ secrets.STATS_TOKEN }}
-        with:
-          USERNAME: MarioKreticoskiJunyor
-          THEME: github_dark
-          TIME_ZONE: America/Sao_Paulo
-          AUTO_PUSH: false
-
-      - name: Reunir as imagens
-        run: cp profile-summary-card-output/github_dark/0-profile-details.svg cards/atividade.svg
-
-      # O token com read:user faz o gráfico de atividade exibir o e-mail da conta.
-      # Remove o texto e o ícone e interrompe a publicação se sobrar algum e-mail.
-      # A 4ª linha do card (ícone em y=84) só é o e-mail quando ele existe; sem
-      # e-mail, ela mostra a localização, e o ícone deve ficar.
-      - name: Remover o e-mail do gráfico de atividade
-        run: |
-          python3 - cards/atividade.svg <<'PY'
-          import re, sys
-          p = sys.argv[1]
-          s = open(p, encoding="utf-8").read()
-          sem_email = re.sub(r'<text[^>]*>[^<]*@[^<]*</text>', '', s)
-          if sem_email != s:
-              sem_email = re.sub(r'<g transform="translate\(0,84\)"[^>]*>.*?</g>', '', sem_email, count=1, flags=re.S)
-          s = sem_email
-          if re.search(r'[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}', s):
-              sys.exit("e-mail ainda presente")
-          open(p, "w", encoding="utf-8").write(s)
-          PY
-
-      - name: Empacotar as imagens para o Pages
+      - name: Empacotar a imagem para o Pages
         uses: actions/upload-pages-artifact@v5
         with:
           path: cards
