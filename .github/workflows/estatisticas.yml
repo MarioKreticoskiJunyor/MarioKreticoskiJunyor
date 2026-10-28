@@ -63,8 +63,22 @@ jobs:
       - name: Reunir as imagens
         run: |
           cp profile-summary-card-output/github_dark/0-profile-details.svg cards/atividade.svg
-          mkdir -p cards/3d
-          cp profile-3d-contrib/*.svg cards/3d/
+          cp profile-3d-contrib/profile-night-view.svg cards/3d.svg
+
+      # O token com read:user faz o gráfico de atividade exibir o e-mail da conta.
+      # Remove o texto e o ícone e interrompe a publicação se sobrar algum e-mail.
+      - name: Remover o e-mail do gráfico de atividade
+        run: |
+          python3 - cards/atividade.svg <<'PY'
+          import re, sys
+          p = sys.argv[1]
+          s = open(p, encoding="utf-8").read()
+          s = re.sub(r'<text[^>]*>[^<]*@[^<]*</text>', '', s)
+          s = re.sub(r'<g transform="translate\(0,84\)"[^>]*>.*?</g>', '', s, count=1, flags=re.S)
+          if re.search(r'[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}', s):
+              sys.exit("e-mail ainda presente")
+          open(p, "w", encoding="utf-8").write(s)
+          PY
 
       - name: Empacotar as imagens para o Pages
         uses: actions/upload-pages-artifact@v5
