@@ -11,8 +11,8 @@ estou concluindo a especialização **CodeMaster - Especialização Avançada em
 
 <div align="center">
   <a href="https://github.com/MarioKreticoskiJunyor">
-    <img height="170" alt="Estatísticas do GitHub" src="https://github-readme-stats.vercel.app/api?username=MarioKreticoskiJunyor&show_icons=true&theme=dark&locale=pt-br" />
-    <img height="170" alt="Linguagens mais usadas" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MarioKreticoskiJunyor&layout=compact&theme=dark&locale=pt-br" />
+    <img height="170" alt="Estatísticas do GitHub" src="https://mariokreticoskijunyor.github.io/MarioKreticoskiJunyor/stats.svg" />
+    <img height="170" alt="Linguagens mais usadas" src="https://mariokreticoskijunyor.github.io/MarioKreticoskiJunyor/top-langs.svg" />
   </a>
   <br />
   <img height="170" alt="Sequência de contribuições" src="https://streak-stats.demolab.com?user=MarioKreticoskiJunyor&theme=dark&locale=pt_BR" />
