@@ -44,6 +44,28 @@ jobs:
           token: ${{ secrets.STATS_TOKEN }}
           fail_on_error: true
 
+      - name: Gráfico de atividade
+        uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.STATS_TOKEN }}
+        with:
+          USERNAME: MarioKreticoskiJunyor
+          THEME: github_dark
+          TIME_ZONE: America/Sao_Paulo
+          AUTO_PUSH: false
+
+      - name: Calendário 3D
+        uses: yoshi389111/github-profile-3d-contrib@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.STATS_TOKEN }}
+          USERNAME: MarioKreticoskiJunyor
+
+      - name: Reunir as imagens
+        run: |
+          cp profile-summary-card-output/github_dark/0-profile-details.svg cards/atividade.svg
+          mkdir -p cards/3d
+          cp profile-3d-contrib/*.svg cards/3d/
+
       - name: Empacotar as imagens para o Pages
         uses: actions/upload-pages-artifact@v5
         with:
