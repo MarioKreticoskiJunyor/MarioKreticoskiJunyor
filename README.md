@@ -14,8 +14,6 @@ estou concluindo a especialização **CodeMaster - Especialização Avançada em
   <img height="170" alt="Estatísticas do GitHub" src="https://mariokreticoskijunyor.github.io/MarioKreticoskiJunyor/stats.svg" />
   <br />
   <img width="700" alt="Gráfico de atividade" src="https://mariokreticoskijunyor.github.io/MarioKreticoskiJunyor/atividade.svg" />
-  <br />
-  <img width="700" alt="Calendário 3D de contribuições" src="https://mariokreticoskijunyor.github.io/MarioKreticoskiJunyor/3d.svg" />
 </div>
 
 ---

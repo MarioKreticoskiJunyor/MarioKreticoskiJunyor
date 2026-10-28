@@ -54,27 +54,23 @@ jobs:
           TIME_ZONE: America/Sao_Paulo
           AUTO_PUSH: false
 
-      - name: Calendário 3D
-        uses: yoshi389111/github-profile-3d-contrib@latest
-        env:
-          GITHUB_TOKEN: ${{ secrets.STATS_TOKEN }}
-          USERNAME: MarioKreticoskiJunyor
-
       - name: Reunir as imagens
-        run: |
-          cp profile-summary-card-output/github_dark/0-profile-details.svg cards/atividade.svg
-          cp profile-3d-contrib/profile-night-view.svg cards/3d.svg
+        run: cp profile-summary-card-output/github_dark/0-profile-details.svg cards/atividade.svg
 
       # O token com read:user faz o gráfico de atividade exibir o e-mail da conta.
       # Remove o texto e o ícone e interrompe a publicação se sobrar algum e-mail.
+      # A 4ª linha do card (ícone em y=84) só é o e-mail quando ele existe; sem
+      # e-mail, ela mostra a localização, e o ícone deve ficar.
       - name: Remover o e-mail do gráfico de atividade
         run: |
           python3 - cards/atividade.svg <<'PY'
           import re, sys
           p = sys.argv[1]
           s = open(p, encoding="utf-8").read()
-          s = re.sub(r'<text[^>]*>[^<]*@[^<]*</text>', '', s)
-          s = re.sub(r'<g transform="translate\(0,84\)"[^>]*>.*?</g>', '', s, count=1, flags=re.S)
+          sem_email = re.sub(r'<text[^>]*>[^<]*@[^<]*</text>', '', s)
+          if sem_email != s:
+              sem_email = re.sub(r'<g transform="translate\(0,84\)"[^>]*>.*?</g>', '', sem_email, count=1, flags=re.S)
+          s = sem_email
           if re.search(r'[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}', s):
               sys.exit("e-mail ainda presente")
           open(p, "w", encoding="utf-8").write(s)
