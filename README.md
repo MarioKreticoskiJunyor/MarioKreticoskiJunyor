@@ -1,32 +1,75 @@
-# Hi there, I'm Mario Kreticoski Junyor! 👋
+# Mario Kreticoski Junyor
 
-Welcome to my GitHub profile. Feel free to explore my repositories and projects.
+**Desenvolvedor Python · Backend · Automação** — Curitiba, PR
 
-🌱 Currently focusing on improving my coding skills and learning new technologies.
-<div>
-  <a href="https://github.com/MarioKreticoskiJunyor">
-    <img height="180em" src="https://github-readme-stats-fast.vercel.app/api?username=MarioKreticoskiJunyor&show_icons=true&theme=dark"/>
-    <img height="180em" src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=MarioKreticoskiJunyor&layout=compact&theme=dark"/>
-  </a>
-</div>
-
-# Technologies and Tools 🚀
-
-Here are some of the technologies and tools I've had brief experience with:
+Desenvolvo sistemas web, APIs e automações com Python, principalmente com Django,
+Django REST Framework e FastAPI sobre PostgreSQL. Participo do desenvolvimento de
+sistemas internos em ambiente institucional e mantenho projetos próprios de
+plataformas web. Estou concluindo a especialização **CodeMaster — Especialização
+Avançada em Python (UTFPR)** e estudo IA Generativa e Engenharia de Agentes.
 
 <div align="center">
-  <img align="center" height="40em" width="40em" title="Python" alt="Python" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
-  <img align="center" height="40em" width="40em" title="Django" alt="Django" src="https://github.com/MarioKreticoskiJunyor/MarioKreticoskiJunyor/blob/main/django-plain.svg">
-  <img align="center" height="40em" width="40em" title="C" alt="C" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg">
-  <img align="center" height="40em" width="40em" title="CSS3" alt="CSS3" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-  <img align="center" height="40em" width="40em" title="HTML5" alt="HTML5" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-  <img align="center" height="40em" width="40em" title="Git" alt="Git" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">
-  <img align="center" height="40em" width="40em" title="Bootstrap" alt="Bootstrap" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg">
-  <img align="center" height="40em" width="40em" title="Linux" alt="Linux" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg">
+  <a href="https://github.com/MarioKreticoskiJunyor">
+    <img height="170" alt="Estatísticas do GitHub" src="https://github-readme-stats.vercel.app/api?username=MarioKreticoskiJunyor&show_icons=true&theme=dark&locale=pt-br" />
+    <img height="170" alt="Linguagens mais usadas" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MarioKreticoskiJunyor&layout=compact&theme=dark&locale=pt-br" />
+  </a>
+  <br />
+  <img height="170" alt="Sequência de contribuições" src="https://streak-stats.demolab.com?user=MarioKreticoskiJunyor&theme=dark&locale=pt_BR" />
 </div>
 
-</div>
-I'm a future programmer, with a talent for problem solving and creative thinking. I like bringing ideas to life through code and exploring new technologies. When I'm not programming, you can find me playing Valorant.
+---
 
-Connect with me on [LinkedIn](https://www.linkedin.com/in/m%C3%A1rio-kreticoski-junyor-31b92620b/)!
-</div>
+## Experiência
+
+**Sistemas institucionais — SD Core e DocProcess**
+Participo do desenvolvimento e da evolução de sistemas internos com Python, Django
+e PostgreSQL: automação de processos, geração e leitura de documentos (Word, Excel
+e PDF), integração com outras bases de dados e pipeline de qualidade e testes no
+GitLab CI. *(Código e detalhes são institucionais e não são publicados aqui.)*
+
+**Projetos próprios**
+Plataformas web multi-tenant com autenticação, controle de acesso por papéis,
+testes automatizados, Docker e deploy com Jenkins. Veja a seção de projetos.
+
+## Tecnologias
+
+| Área | Ferramentas |
+|---|---|
+| Linguagem | Python |
+| Backend | Django, Django REST Framework, FastAPI, Flask |
+| Dados | PostgreSQL, SQLite, SQLAlchemy, Alembic, pandas |
+| Qualidade | pytest, Ruff |
+| Infra e entrega | Docker, Docker Compose, Jenkins, GitLab CI |
+| Versionamento | Git, GitHub, GitLab |
+| Desenvolvimento assistido por IA | Claude Code |
+| Também já utilizei | HTML, CSS, Bootstrap, Java (Android) |
+
+## Formação
+
+- **CodeMaster — Especialização Avançada em Python** · UTFPR · *em conclusão*
+- Cursos de Python na Udemy, com o registro dos estudos em
+  [CursoPython](https://github.com/MarioKreticoskiJunyor/CursoPython) e
+  [CursoPython26horas](https://github.com/MarioKreticoskiJunyor/CursoPython26horas) · *em andamento*
+
+## Estudando agora
+
+- IA Generativa e Engenharia de Agentes
+- Machine Learning
+- Arquitetura de APIs e aplicações multi-tenant
+
+## Projetos em destaque
+
+| Projeto | Descrição | Stack |
+|---|---|---|
+| **KRTK Agendador** *(privado)* | Plataforma multi-tenant de sites e agendamento online para barbearias, com área da equipe e área do cliente separadas | FastAPI, SQLAlchemy assíncrono, PostgreSQL, Alembic, Redis, Docker, Jenkins, pytest |
+| **KRTK Empresas** *(privado, em desenvolvimento)* | API SaaS multi-tenant para gestão de locações e contratos: autenticação JWT, papéis por empresa e auditoria (módulos de negócio ainda em construção) | Django, Django REST Framework, Simple JWT, PostgreSQL, Docker Compose, Jenkins, testes automatizados |
+| [Panificadora](https://github.com/MarioKreticoskiJunyor/Panificadora) | App Android de cadastro de produtos com CRUD completo em SQLite | Java, Android, SQLite |
+| [Django — cadastro de usuários](https://github.com/MarioKreticoskiJunyor/Django) | Primeiro projeto Django: cadastro e listagem de usuários | Django, SQLite, Bootstrap |
+| [CursoPython](https://github.com/MarioKreticoskiJunyor/CursoPython) | Registro dos meus estudos de Python, de lógica de programação até orientação a objetos | Python |
+| [ListaDeRamal](https://github.com/MarioKreticoskiJunyor/ListaDeRamal) | Consulta de ramais telefônicos com busca sem acentos | Flask, pandas |
+
+Os projetos marcados como *privados* não têm o código publicado.
+
+## Contato
+
+[LinkedIn](https://www.linkedin.com/in/mariokreticoskijunyor/)
