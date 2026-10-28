@@ -43,6 +43,8 @@ testes automatizados, Docker e deploy com Jenkins. Veja a seção de projetos.
 | Backend | Django, Django REST Framework, FastAPI, Flask |
 | Dados | PostgreSQL, SQLite, SQLAlchemy, Alembic, pandas |
 | Qualidade | pytest, Ruff |
+| Sistemas operacionais | Linux (Ubuntu), Windows (incluindo Active Directory) |
+| Servidor e deploy | Administração do servidor VPS Linux que hospeda o [krtk.com.br](https://krtk.com.br): Nginx, Caddy, Gunicorn, systemd, Let's Encrypt, Cloudflare, UFW, fail2ban |
 | Infra e entrega | Docker, Docker Compose, Jenkins, GitLab CI |
 | Versionamento | Git, GitHub, GitLab |
 | Desenvolvimento assistido por IA | Claude Code |
@@ -60,7 +62,6 @@ testes automatizados, Docker e deploy com Jenkins. Veja a seção de projetos.
 
 - ITIL® Foundation Certificate in IT Service Management · PeopleCert · 2024
 - HDI DAST - Desktop Advanced Support Technician · HDI Brasil · 2024
-- Linux Fundamentos (Curso Nano) · FIAP
 
 ## Estudando agora
 
