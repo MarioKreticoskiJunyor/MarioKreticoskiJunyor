@@ -27,7 +27,9 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: username=MarioKreticoskiJunyor&show_icons=true&theme=dark&locale=pt-br
+          # "contributions" segue a opção de contribuições privadas do perfil;
+          # "commits" é escondido porque, com token fine-grained, conta só os públicos.
+          options: username=MarioKreticoskiJunyor&show_icons=true&theme=dark&locale=pt-br&show=contributions&hide=commits
           path: cards/stats.svg
           token: ${{ secrets.STATS_TOKEN }}
           fail_on_error: true
