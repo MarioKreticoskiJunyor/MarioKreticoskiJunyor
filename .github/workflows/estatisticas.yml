@@ -1,0 +1,61 @@
+# Gera os cards de estatísticas e de linguagens com o token do dono do perfil
+# (incluindo repositórios privados) e publica as imagens no GitHub Pages.
+# Não faz commit: as imagens vão para o Pages, fora do histórico do repositório.
+
+name: Atualizar estatísticas do perfil
+
+on:
+  schedule:
+    - cron: "0 6 * * *" # todo dia às 03h de Brasília
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [.github/workflows/estatisticas.yml]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  gerar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Card de estatísticas
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=MarioKreticoskiJunyor&show_icons=true&theme=dark&locale=pt-br
+          path: cards/stats.svg
+          token: ${{ secrets.STATS_TOKEN }}
+          fail_on_error: true
+
+      - name: Card de linguagens
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=MarioKreticoskiJunyor&layout=compact&theme=dark&locale=pt-br
+          path: cards/top-langs.svg
+          token: ${{ secrets.STATS_TOKEN }}
+          fail_on_error: true
+
+      - name: Empacotar as imagens para o Pages
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: cards
+
+  publicar:
+    needs: gerar
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: Publicar no GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v5
