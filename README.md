@@ -10,7 +10,7 @@ estou concluindo a especialização **CodeMaster - Especialização Avançada em
 (UTFPR)** e estudo IA Generativa e Engenharia de Agentes.
 
 <div align="center">
-  <img width="457" height="180" alt="Total de contribuições" src="https://streak-stats.demolab.com?user=MarioKreticoskiJunyor&theme=dark&locale=pt_BR" />
+  <img width="457" height="180" alt="Total de contribuições" src="https://streak-stats.demolab.com?user=MarioKreticoskiJunyor&theme=dark&locale=pt_BR&starting_year=2023" />
   <img width="327" height="180" alt="Linguagens mais usadas" src="https://mariokreticoskijunyor.github.io/MarioKreticoskiJunyor/top-langs.svg" />
 </div>
 
